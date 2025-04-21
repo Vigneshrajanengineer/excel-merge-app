@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Excel File Merger</title>
+</head>
+<body>
+    <h2>Merge Multiple Excel Files</h2>
+    <form action="/merge" method="post" enctype="multipart/form-data">
+        <label>Sheet Name (Optional):</label>
+        <input type="text" name="sheet_name" placeholder="Sheet1 or leave blank"><br><br>
+
+        <label>Upload Excel Files:</label>
+        <input type="file" name="files" multiple required><br><br>
+
+        <input type="submit" value="Merge Files">
+    </form>
+</body>
+</html>
